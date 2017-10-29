@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using KarateKataRanking;
 using NFluent;
 using NUnit.Framework;
 
