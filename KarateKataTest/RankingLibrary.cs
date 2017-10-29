@@ -12,7 +12,7 @@
        
         
 
-        public void Sort()
+        public int[] Sort()
         {
             int[] arraysEvalued = arrays;
             if (arrays.Length == 1)
