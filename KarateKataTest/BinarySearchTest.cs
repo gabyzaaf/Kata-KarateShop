@@ -48,5 +48,25 @@ namespace KarateKataTest
 
         }
 
+        [Test]
+        public void Should_Cute_The_Array_In_Two_Part_And_Display_The_Left()
+        {
+            // ARANGE
+            var array = new int[4] { 0, 1, 2, 3 };
+            int[] arrayEvalued = new int[2];
+            int[] arrayResult = new int[2] { 0, 1 };
+            
+            //ACT
+            var number = array.Length / 2;
+
+            for (int i = number-1; i >= 0; i--)
+            {
+                arrayEvalued[i] = array[i];
+             }
+
+            //ASSERT
+            Check.That(arrayEvalued.SequenceEqual(arrayResult)).IsTrue();
+        }
+
     }
 }
